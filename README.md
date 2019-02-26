@@ -1,2 +1,4 @@
 # lazyPython
-是一个python项目，主要相关网络相关
+ADT：数据结构
+HTTP_SERVER:基于wsgi协议的http服务器
+image：Django处理照片的项目
