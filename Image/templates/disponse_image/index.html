@@ -1,0 +1,254 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .center {
+            text-align: center;
+        }
+        .colorefef{
+            color:#FFF68F
+        }
+        .pad{
+            margin-top:20px;
+            margin-bottom:20px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div style="height:30px"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 center">
+                <h1>我可以把照片改成指定大小</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 "></div>
+            <div class="col-md-9">
+                <h2>
+                    </2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <dl>
+                    <dt>使用前阅读：</dt>
+                    <dd>
+                        <ol>
+                            <li>你需要上传<strong>jpg格式</strong>或<strong>png格式</strong>的照片。</li>
+                            <li>照片经放大缩小，会失帧。</li>
+                            <li>缩放后的相片大小达不到要求，这时候你要通过修改照片品质再次上传相片。</li>
+                            <li>缩放图片会默认的压缩照片，还没测试无损照片的方法</li>
+                            <li>想要我的微信号么，要过去可以开启新姿势啊</li>
+                            <li>Soul_Tree</li>
+                        </ol>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div style="height:20px;"></div>
+            </div>
+        </div>
+        <!-- ------上传文件正文---------- -->
+        <div class="row">
+            <div class="col-md-6">
+                <blockquote>
+                    <p>我来修改尺寸</p>
+                </blockquote>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputName2">Width</label>
+                            <input type="text" class="form-control" id="width" placeholder="宽（像素）">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">Height</label>
+                            <input type="text" class="form-control" id="height" placeholder="高（像素）">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- <label for="exampleInputFile">先点我、先点我！</label> -->
+                            <!-- <label for="exampleInputFile">（缩放图片）</label><br /> -->
+                            <input type="file" name="file" id="FormFileFixed">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-info" style="width:100%" id="fixed">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <blockquote>
+                    <p>我来修改品质</p>
+                </blockquote>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputName2">Quality</label>
+                            <input type="text" class="form-control" id="weight" placeholder="品质比例（%）">
+                        </div>
+                        <p class="text-primary">应该填写45以下的数，包含45</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <!-- <label for="exampleInputFile">我在这</label> -->
+                            <!-- <label for="exampleInputFile">（调整质量）</label><br /> -->
+                            <input type="file" name="file" id="resizeForm" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-info" style="width:100%" id="resizebutton">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <div style="height:30px;"></div> -->
+                <hr style="height:3px;border:3px soild #EEE9BF;" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <a class="btn btn-default" href="out.html" role="button">跳转到神秘网站</a>
+                <!-- <button type="submit" class="btn btn-info" style="width:100%" id="resizebutton">Submit</button> -->
+            </div>
+
+        </div>
+        <div class="row">
+            <div style="height:10px"></div>
+        </div>
+        <!-- <div class="row pad">
+            <div class="col-md-5">
+                
+            </div>
+            <div class="col-md-2 center">
+                <text>split line</text>
+            </div>
+            <div class="col-md-5 ">
+                <hr style="height:3px;border:none;border-top:3px double #EEE9BF;" />
+            </div>
+        </div> -->
+
+    </div>
+
+
+</body>
+<!-- <script src="/js/jquery.js"></script> -->
+<script src="{% static 'disponse_image/js/jquery.js' %}"></script>
+<script>
+    //jquery异步上传
+    $("#fixed").click(function () {
+        var formData = new FormData();//初始化一个FormData对象
+        var width = $("#width").val()
+        var height = $("#height").val()
+        var Formfile = $("#FormFileFixed")[0].files[0]
+        console.log(width)
+        console.log(height)
+        if (width == "" || width == undefined) {
+            width = ""
+        }
+        if (height == "" || height == undefined) {
+            height = ""
+        }
+        if (Formfile == "" || Formfile == undefined) {
+            alert("照片呢！")
+            return false
+        }
+
+        formData.append("files", Formfile);//将文件塞入FormData
+        formData.append("width", width);//将文件塞入FormData
+        formData.append("height", height);//将文件塞入FormData
+
+        $.ajax({
+            // url: "http://47.104.212.34/image/fixedsize/",
+            url: "/image/fixedsize/",
+            type: "POST",
+            data: formData,
+            processData: false,  // 告诉jQuery不要去处理发送的数据
+            contentType: false,   // 告诉jQuery不要去设置Content-Type请求头
+            success: function (successCallback) {
+
+                // var a = "http://47.104.212.34/image/down/" + successCallback;
+                var a = "/image/down/" + successCallback;
+                // console.log(a)
+                window.location.href = a
+
+            },
+            error: function (error) {
+                alert("error")
+                console.log(error)
+            }
+        });
+    });
+</script>
+
+<script>
+    var url_host = ""
+    //jquery异步上传
+    $("#resizebutton").click(function () {
+        var formData = new FormData();//初始化一个FormData对象
+        var weight = $("#weight").val()
+        var Formfile = $("#resizeForm")[0].files[0]
+
+        if (weight < 0 || weight > 100) {
+            alert("数值不对！")
+            return false
+        }
+
+        if (Formfile == "" || Formfile == undefined) {
+            alert("照片呢！")
+            return false
+        }
+
+        formData.append("files", Formfile);//将文件塞入FormData
+        formData.append("weight", weight);//weight
+
+        $.ajax({
+            // url: "http://47.104.212.34/image/resizeweight/",
+            url: "/image/resizeweight/",
+            type: "POST",
+            data: formData,
+            processData: false,  // 告诉jQuery不要去处理发送的数据
+            contentType: false,   // 告诉jQuery不要去设置Content-Type请求头
+            success: function (successCallback) {
+
+                // var a = "http://47.104.212.34/image/down/" + successCallback;
+                var a = "/image/down/" + successCallback;
+                // console.log(a)
+                window.location.href = a
+
+            },
+        });
+    });
+</script>
+
+</html>
