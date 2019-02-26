@@ -1,4 +1,4 @@
 # lazyPython
-ADT：数据结构
-HTTP_SERVER:基于wsgi协议的http服务器
+ADT：数据结构<br/>
+HTTP_SERVER:基于wsgi协议的http服务器<br/>
 image：Django处理照片的项目
