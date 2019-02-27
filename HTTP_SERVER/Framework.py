@@ -23,7 +23,8 @@ class FrameWork(object):
         if path.endwith(".html"):
             return self.read_file(evn, start_response)
 
-        if path.endwith(".html"):
+        # 动态解析
+        if path.endwith(".py"):
             # 转发路由
             for key, value in self.URLS:
                 if path == key:
@@ -38,7 +39,8 @@ class FrameWork(object):
 
     def start(self, ip, port):
         '''自动启动服务器'''
-        Server.Server(ip=ip, port=port, framework=self.application)
+        s = Server.Server(ip=ip, port=port, framework=self.application)
+        s.main()
 
     def read_file(self, evn, start_response):
         """读取本地文件"""
@@ -67,26 +69,10 @@ class FrameWork(object):
 
         return body
 
-    # def application(self, evn, start_response):
-    #     """
-    #     WSGI协议规定
-    #     application函数用于返回body体，
-    #     start_response:用于返回状态码与head
-    #     evn:用户请求数据,是一个字典
-    #     """
-    #     header = [
-    #         ('Content-Type', 'text/html'),
-    #         ('Server', 'TreeComputer')
-    #     ]
-    #     start_response(
-    #         "200 OK", header)
-    #     body = self.one()
-    #     return body
 
-
-def one(self):
+def one(evn, start_response):
     """
-    WSGI协议规定
+    WSGI协议规定：(框架调用类外的函数)
     application函数用于返回body体，
     start_response:用于返回状态码与head
     evn:用户请求数据,是一个字典

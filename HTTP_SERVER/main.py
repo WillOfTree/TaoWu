@@ -3,7 +3,10 @@ import Framework
 # a = Server.Server()
 # a.main()
 ''''
-通过Framework调用server
+1、启动Framework框架
+2、将框架Framework传递给server
+3、server绑定IP、端口
+4、server.start
 '''
 
 
@@ -13,7 +16,7 @@ def main():
         "/": "one"
     }
     a = Framework.FrameWork(urls)
-    a.start("", 8000)
+    a.start("127.0.0.1", 8000)
 
 
 if __name__ == "__main__":

@@ -16,7 +16,7 @@ class Server(object):
     def __init__(self, ip='', port='', formework):
         self.SIP = ip
         self.SPORT = port
-        self.FRAMEWORK = formwork
+        self.FRAMEWORK = formwork.application
         print("Server运行一次")
 
     def run_pro(self, client):
