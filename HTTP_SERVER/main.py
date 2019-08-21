@@ -1,23 +1,26 @@
-import Framework
+# -*- coding: utf-8 -*-  
+#
+# 启动程序
+#
+import os
 
-# a = Server.Server()
-# a.main()
-''''
-1、启动Framework框架
-2、将框架Framework传递给server
-3、server绑定IP、端口
-4、server.start
-'''
+from sys_http.framework import FrameWork
+from sys_http.server import HTTPServer
 
+# 导入路由
+from application.pyindex import index
 
-def main():
-    # 配置自己的路由信息
-    urls = {
-        "/": "one"
-    }
-    a = Framework.FrameWork(urls)
-    a.start("127.0.0.1", 8000)
-
+# 配置url
+config_url = [
+    (r"/", index)
+]
+# 静态文件目录
+# 静态文件目录必须为 /static
+static_path = os.getcwd() + "/static"
 
 if __name__ == "__main__":
-    main()
+
+    app = FrameWork(config_url, static_path)
+    http = HTTPServer(app)
+    http.bind(8000)
+    http.start()
