@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <h1>上传图片测试</h1>
+        <input accept="image/*" name="img" id="upload_file" type="file">
+    </body>
+    <button type="button" onclick="info()">Click Me!</button>
+</html>
+<script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.js"></script>
+<script>
+
+var info = function(){
+
+    let file = document.getElementById("upload_file").files[0];
+
+    let formdata1=new FormData();  // 创建form对象
+    // formdata1.append('img',file,file.name); // 通过append向form对象添加数据,可以通过append继续添加数据
+    formdata1.append('img',file);
+   
+    let config = {
+        headers:{'Content-Type':'multipart/form-data'} //添加请求头
+    };  
+
+    axios.post('http://127.0.0.1:8000/',{
+        formdata1,
+        config
+    }).then((response) => {   //这里的/xapi/upimage为接口
+        console.log(response.data);
+    })
+}
+
+</script>
