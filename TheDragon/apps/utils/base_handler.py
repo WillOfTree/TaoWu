@@ -6,7 +6,7 @@
 # --------------
 #
 # 用于初始化参数，配置默认返回值
-
+import json
 from tornado.web import RequestHandler
 
 
@@ -21,10 +21,17 @@ class BaseHandler(RequestHandler):
         return self.application.redis
 
     def prepare(self):
-        pass
+        # 验证json变量参数
+        if self.request.headers.get("content-type").endswith("application/json"):
+            try:
+                self.json_obj = json.loads(self.request.body)
+            except:
+                self.json_obj = None
+        else:
+            self.json_obj = None
 
     def write_error(self):
-        pass
+        self.write("500 error")
 
     def set_default_headers(self):
         self.set_header('Access-Control-Allow-Origin', '*')
@@ -43,4 +50,5 @@ class BaseHandler(RequestHandler):
         pass
 
     def options(self):
+        # 跨域请求设置
         pass

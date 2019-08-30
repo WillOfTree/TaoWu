@@ -12,15 +12,15 @@
 # jwt_expire      ; 过期时间
 #===================================
 import os
-print(os.path.join(os.path.dirname(__file__), "../templates/"))
+
 
 settings = {
     "debug":True,
-    "secret_key": "1",
-    "jwt_expire": 6000,  # 这里必须是数字，不能是字符串
-    "MEDIA_ROOT": "./statics",  # 以server.py为基准
+    # "secret_key": "1",
+    # "jwt_expire": 6000,  # 这里必须是数字，不能是字符串
+    # "MEDIA_ROOT": "./statics",  # 以server.py为基准
     # "static_path": os.path.join(os.path.dirname(__file__), "static"),
-    "template_path": os.path.join(os.path.dirname(__file__), "../templates"),
+    # "template_path": os.path.join(os.path.dirname(__file__), "../templates"),
 }
 
 #-------------------------------
@@ -56,3 +56,13 @@ mysql_config = dict(
 #
 #
 #=====================
+
+
+
+# 输出配置信息
+try:
+    if settings['debug'] and settings['template_path']:
+        path = os.path.join(os.path.dirname(__file__), "../templates/")
+        print("模板配置地址:{0}".format(path))
+except KeyError:
+    pass
