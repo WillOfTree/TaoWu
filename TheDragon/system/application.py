@@ -7,19 +7,17 @@
 #
 # 在application初始化时配置一些参数
 # 如果没有配置mysql，redis，请注释掉 mysql、redis初始化代码
-
-import tornado.web
 import redis
+import tornado.web
 import peewee_async
 
 # 没有配置mysql、redis，注释
-from .settings import redis_config
+from config.settings import redis_config
 from .model import database
 
 
 class Application( tornado.web.Application ):
     
-
     def __init__(self, *args, **kargs):
         super(Application, self).__init__(*args, **kargs)
        

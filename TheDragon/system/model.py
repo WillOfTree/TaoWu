@@ -11,7 +11,7 @@
 
 import peewee_async
 from peewee import Model
-from .settings import mysql_config
+from config.settings import mysql_config
 
 # 连接数据库
 database = peewee_async.MySQLDatabase(**mysql_config)

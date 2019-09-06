@@ -2,7 +2,7 @@
 # 目录结构           -
 #--------------------
 Tornado     
-  |-apps
+  |-app
   |  |-api     -- 应用目录
   |  |  |-- handler.py   # view
   |  |-models

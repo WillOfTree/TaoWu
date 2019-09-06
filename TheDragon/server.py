@@ -6,7 +6,7 @@ import tornado.ioloop
 import tornado.httpserver
 # import wtforms_json #wtfom配置
 
-from config.application import Application
+from system.application import Application
 from config.urls import urlpattern
 from config.settings import settings
 from tornado.options import define, options

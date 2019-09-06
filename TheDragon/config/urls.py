@@ -1,13 +1,8 @@
-# -*-coding:utf-8-*-
-#
-# urls
-# 
-# 路由（总）集合
-# ------------
-# 
-# 配置路由信息
+"""路由配置文件
 
-from apps.api.index import IndexHandler
+引入app/HTTP下的模块，
+"""
+from app.HTTP.Api.IndexHandler import IndexHandler
 
 urlpattern = [
     (r"/api/login", IndexHandler),
