@@ -1,0 +1,5 @@
+flask
+peewee
+uwsgi
+jinja2
+flask-wtf

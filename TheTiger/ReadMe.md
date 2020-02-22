@@ -1,0 +1,9 @@
+### flask 框架
+APP -> HTTP响应请求模块
+Models -> 数据库模型
+static -> 静态资源
+System -> 系统配置启动文件
+Templates -> 模板目录
+Utils -> 系统插件目录，公共方法
+server.py -> 入口文件
+uWSGI -> 通用uwsgi配置目录，日志等信息
