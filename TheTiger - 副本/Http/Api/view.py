@@ -1,9 +1,9 @@
-from flask import Blueprint 
+from System.Redprint import Redprint
 
 # 创建当前view的视图
-api = Blueprint("api", __name__)
+api = Redprint("api")
 
-
-@api.route('/')
+# /api/get
+@api.route('/get')
 def home():
     return '<h1>Hello, this is admin blueprint</h1>'

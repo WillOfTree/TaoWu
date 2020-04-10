@@ -6,20 +6,13 @@
 import os
 import sys
 
+# 添加请求位置到系统
 BASE_DIR = os.path.dirname(os.path.dirname(__file__)) # 系统路径
 static_dir = os.path.join(BASE_DIR, 'Public/static') # 静态目录
 templates_dir = os.path.join(BASE_DIR, 'Public/templates') # 模板目录
-
-# 将系统目录添加
-sys.path.append(os.path.join(BASE_DIR, "Utils"))
-
-
-class Config(object):
-    DEBUG = False
-    TESTING = False
-    SECRET_KEY = os.urandom(24)
+sys.path.append(os.path.join(BASE_DIR, "../http"))
+# sys.path.append(os.path.join(BASE_DIR, "../libs"))
 
 
-class DevelopmentConfing(Config):
-    DEBUG = True
-    TESTING = True
+DEBUG = True
+
