@@ -3,19 +3,25 @@
 """
 from flask import Flask
 
-from System.Router import register_blueprints
+from System import register_blueprints
+from Http.Models import db
+
+def register_plugin(app):
+    """注册插件"""
+    from Http import db
+
+    db.init_app(app) # 注册数据库
 
 
 def create_app():
     app = Flask(__name__)
-    app.config.from_object("System.Config.setting")
+    app.config.from_object("Config.setting")
+    app.config.from_object("Config.secure")
     
     # 注册路由
     register_blueprints(app) 
-    
-    # 注册DB
-    # db.init_app(app)
-    # db.create_all(app=app)
+    register_plugin(app)
+
     return app
 
 

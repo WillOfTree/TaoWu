@@ -1,5 +1,7 @@
 flask
-peewee
+sqlalchmey
+flask_login
+wtform
 uwsgi
 jinja2
 flask-wtf

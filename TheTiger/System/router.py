@@ -8,6 +8,6 @@ def register_blueprints(app):
     """
         路由注册方法，引入路由，注册
     """
-    from Http.Api import api_blueprint
+    from Http import api_blueprint
     # 向蓝图注册红图
     app.register_blueprint(api_blueprint(), url_prefix="/api")

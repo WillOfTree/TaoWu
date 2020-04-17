@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a5b4f63-1ad4-44fa-af8e-ef2513edbd89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Http/Form/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Http/Models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/BaseForm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/BaseModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/Jsonify.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/enum_my.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/token.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/create_table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TheTiger-API/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TheTiger-API/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TheTiger-API/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TheTiger-API/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TheTiger/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TheTiger/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TheTiger/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TheTiger/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TheTiger/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/Api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Http/View/Api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/Api/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/Http/View/Api/view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/Home/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Http/View/Home/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Http/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libs/Exception/ApiException.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libs/Exception/ApiException.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libs/Exception/Base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libs/Exception/BaseException.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libs/Exception/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libs/Exception/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libs/Form/Base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libs/Form/Index.py" beforeDir="false" afterPath="$PROJECT_DIR$/Http/Form/example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libs/Form/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Http/Models/example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Http/View/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/System/App.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Config/secure.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/secure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Config/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/DbConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libs/RBAC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Midder.py" beforeDir="false" afterPath="$PROJECT_DIR$/System/Midder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Redprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/Libs/redprint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Router.py" beforeDir="false" afterPath="$PROJECT_DIR$/System/Router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/tool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uWSGI/wsgi.ini" beforeDir="false" afterPath="$PROJECT_DIR$/uWSGI/wsgi.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TheTiger-API/Libs/BaseException.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TheTiger-API/Libs/BaseForm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TheTiger/Libs/Form/Index.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TheTiger/Libs/Form/Index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TheTiger/System/Config/secure.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TheTiger/System/Config/secure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TheTiger/System/Config/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TheTiger/System/Config/setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TheTiger/System/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TheTiger/System/router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TheTiger/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TheTiger/manage.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1aZwC99EZIWlWK8z4f0BWVryuq6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tianx\Documents\TaoWu\TheTiger - 副本\Libs" />
+      <recent name="C:\Users\tianx\Documents\TaoWu\TheTiger - 副本\Http" />
+      <recent name="C:\Users\tianx\Documents\TaoWu\TheTiger - 副本\Http\View" />
+      <recent name="C:\Users\tianx\Documents\TaoWu\TheTiger - 副本" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a5b4f63-1ad4-44fa-af8e-ef2513edbd89" name="Default Changelist" comment="" />
+      <created>1586956294229</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586956294229</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="311" y="115" key="#Inspections" timestamp="1586958092813">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="311" y="115" key="#Inspections/0.0.1368.872@0.0.1368.872" timestamp="1586958092813" />
+    <state x="140" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587104232277">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="140" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1368.872@0.0.1368.872" timestamp="1587104232277" />
+    <state x="421" y="237" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587105209968">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="421" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1368.872@0.0.1368.872" timestamp="1587105209968" />
+    <state x="347" y="184" width="672" height="678" key="search.everywhere.popup" timestamp="1587111630053">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="347" y="184" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1587111630053" />
+  </component>
+</project>
